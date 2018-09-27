@@ -5,133 +5,227 @@ import java.util.List;
 
 public class PrintableBean {
 
+	/**
+	 * Constructor
+	 */
+	public PrintableBean() {
+	}
+	
+	/**
+	 * Constructor
+	 * 
+	 * @param PlateType
+	 * @param PlateNum
+	 * @param CLSBDH
+	 * @param ShelvesNum
+	 * @param BusType
+	 * @param Index
+	 * @param Code
+	 * @param Owner
+	 * @param IDNum
+	 * @param ChineseBrand
+	 * @param Color
+	 * @param EngineNum
+	 * @param UseOfNature
+	 * @param ModelOfCar
+	 * @param BusName
+	 * @param Verifier
+	 * @param Verifytime
+	 * @param WrongContent
+	 */
+	public PrintableBean(String PlateType,String PlateNum,String CLSBDH,String ShelvesNum,String BusType,int Index,int Code,String Owner
+			,String IDNum,String ChineseBrand, String Color, String EngineNum, String UseOfNature, String ModelOfCar, String BusName,
+			String Verifier, String Verifytime,String WrongContent) {
+		this.PlateType = PlateType;
+		this.PlateNum = PlateNum;
+		this.CLSBDH = CLSBDH;
+		this.ShelvesNum = ShelvesNum;
+		this.BusType = BusType;
+		this.Index = Index;
+		this.Code = Code;
+		this.Owner = Owner;
+		this.IDNum = IDNum;
+		this.ChineseBrand = ChineseBrand;
+		this.Color = Color;
+		this.EngineNum = EngineNum;
+		this.UseOfNature = UseOfNature;
+		this.ModelOfCar = ModelOfCar;
+		this.BusName = BusName;
+		this.Verifier = Verifier;
+		this.Verifytime = Verifytime;
+		this.WrongContent = WrongContent;
+	}
+	
+	
 	public String getPlateType() {
-		return plateType;
+		return PlateType;
 	}
 
 	public void setPlateType(String plateType) {
-		this.plateType = plateType;
+		PlateType = plateType;
 	}
 
-	public String getPlateNumber() {
-		return plateNumber;
+	public String getPlateNum() {
+		return PlateNum;
 	}
 
-	public void setPlateNumber(String plateNumber) {
-		this.plateNumber = plateNumber;
+	public void setPlateNum(String plateNum) {
+		PlateNum = plateNum;
 	}
 
-	public String getVin() {
-		return vin;
+	public String getCLSBDH() {
+		return CLSBDH;
 	}
 
-	public void setVin(String vin) {
-		this.vin = vin;
+	public void setCLSBDH(String cLSBDH) {
+		CLSBDH = cLSBDH;
 	}
 
-	public String getPutawayCode() {
-		return putawayCode;
+	public String getShelvesNum() {
+		return ShelvesNum;
 	}
 
-	public void setPutawayCode(String putawayCode) {
-		this.putawayCode = putawayCode;
+	public void setShelvesNum(String shelvesNum) {
+		ShelvesNum = shelvesNum;
 	}
 
-	public String getBusinessType() {
-		return businessType;
+	public String getBusType() {
+		return BusType;
 	}
 
-	public void setBusinessType(String businessType) {
-		this.businessType = businessType;
+	public void setBusType(String busType) {
+		BusType = busType;
 	}
 
-	public String getBarcode() {
-		return barcode;
+	public int getIndex() {
+		return Index;
 	}
 
-	public void setBarcode(String barcode) {
-		this.barcode = barcode;
+	public void setIndex(int index) {
+		Index = index;
 	}
 
-	public String getIndexNumber() {
-		return indexNumber;
+	public int getCode() {
+		return Code;
 	}
 
-	public void setIndexNumber(String indexNumber) {
-		this.indexNumber = indexNumber;
+	public void setCode(int code) {
+		Code = code;
 	}
 
-	public String getDateCreated() {
-		return dateCreated;
+	public String getOwner() {
+		return Owner;
 	}
 
-	public void setDateCreated(String dateCreated) {
-		this.dateCreated = dateCreated;
+	public void setOwner(String owner) {
+		Owner = owner;
 	}
 
-	public String getBasicInformation() {
-		return basicInformation;
+	public String getIDNum() {
+		return IDNum;
 	}
 
-	public void setBasicInformation(String basicInformation) {
-		this.basicInformation = basicInformation;
+	public void setIDNum(String iDNum) {
+		IDNum = iDNum;
 	}
 
-	public String getObjection() {
-		return objection;
+	public String getChineseBrand() {
+		return ChineseBrand;
 	}
 
-	public void setObjection(String objection) {
-		this.objection = objection;
+	public void setChineseBrand(String chineseBrand) {
+		ChineseBrand = chineseBrand;
 	}
 
-	public String getChecker() {
-		return checker;
+	public String getColor() {
+		return Color;
 	}
 
-	public void setChecker(String checker) {
-		this.checker = checker;
+	public void setColor(String color) {
+		Color = color;
 	}
 
-	public String getDateChecked() {
-		return dateChecked;
+	public String getEngineNum() {
+		return EngineNum;
 	}
 
-	public void setDateChecked(String dateChecked) {
-		this.dateChecked = dateChecked;
+	public void setEngineNum(String engineNum) {
+		EngineNum = engineNum;
+	}
+
+	public String getUseOfNature() {
+		return UseOfNature;
+	}
+
+	public void setUseOfNature(String useOfNature) {
+		UseOfNature = useOfNature;
+	}
+
+	public String getModelOfCar() {
+		return ModelOfCar;
+	}
+
+	public void setModelOfCar(String modelOfCar) {
+		ModelOfCar = modelOfCar;
+	}
+
+	public String getBusName() {
+		return BusName;
+	}
+
+	public void setBusName(String busName) {
+		BusName = busName;
+	}
+
+	public String getVerifier() {
+		return Verifier;
+	}
+
+	public void setVerifier(String verifier) {
+		Verifier = verifier;
+	}
+
+	public String getVerifytime() {
+		return Verifytime;
+	}
+
+	public void setVerifytime(String verifytime) {
+		Verifytime = verifytime;
+	}
+
+	public String getWrongContent() {
+		return WrongContent;
+	}
+
+	public void setWrongContent(String wrongContent) {
+		WrongContent = wrongContent;
 	}
 
 	public static List<PrintableBean> createBeanCollection() {
-		List<PrintableBean> beans = new ArrayList<PrintableBean>();
-		PrintableBean bean = new PrintableBean();
-		bean.setBasicInformation("号牌种类：1-小型汽车\n车牌号：辽BB8K57\nVIN：1222102203DR\n");
-		bean.setChecker("陈顺谊");
-		bean.setDateChecked("2018年5月20日 4点3分");
-		bean.setDateCreated("2018年5月18日 3点33分");
-		bean.setObjection("1.图像不合格\n2.图像不清晰\n");
-
-		bean.setBarcode("1140416110935");
-		bean.setIndexNumber("1");
-		bean.setPutawayCode("116-002-004-027");
-		bean.setPlateType("小型汽车");
-		bean.setBusinessType("注册登记");
-		bean.setPlateNumber("辽BB8K57");
-		bean.setVin("LGB12YEA9DY001226");
-
-		beans.add(bean);
-		return beans;
+		List<PrintableBean> list = new ArrayList<PrintableBean>();
+		PrintableBean bean = new PrintableBean("小型汽车","辽BB8K57","5692","001-001-001-001","新车注册",1,44567788,
+				"陈顺谊","2102121211212","北汽","基金色","AF0492","家用","E130","新车注册","鲁智深","2018年12月29日","车辆照片不清晰。");
+		list.add(bean);
+		return list;
 	}
-
-	private String plateType; // 号牌种类
-	private String plateNumber; // 号码号牌
-	private String vin; // 车辆识别代码
-	private String putawayCode; // 上架号
-	private String businessType;// 业务类型
-	private String barcode; // 条形码,即业务流水号
-	private String indexNumber; // 索引号
-	private String dateCreated; // 申请时间
-	private String basicInformation; // 基本信息
-	private String objection; // 批改意见
-	private String checker; // 审核人
-	private String dateChecked; // 审核时间
+	
+	private String PlateType; // 号牌种类
+	private String PlateNum; // 号码号牌
+	private String CLSBDH; // 车辆识别代号
+	private String ShelvesNum;//上架编号
+	private String BusType;// 业务类型
+	private int Index;//索引号
+	private int Code;//流水号
+	private String Owner;//所有人
+	private String IDNum;//证件号码
+	private String ChineseBrand;//中文品牌
+	private String Color;// 车身颜色
+	private String EngineNum;//发动机号码
+	private String UseOfNature;//使用性质
+	private String ModelOfCar;//车辆型号
+	private String BusName;//业务名称
+	private String Verifier;//审核人
+	private String Verifytime;//审核时间
+	private String WrongContent;//错误内容
+	
 }
