@@ -33,7 +33,7 @@ public class PrintableBean {
 	 * @param Verifytime
 	 * @param WrongContent
 	 */
-	public PrintableBean(String PlateType,String PlateNum,String CLSBDH,String ShelvesNum,String BusType,int Index,int Code,String Owner
+	public PrintableBean(String PlateType,String PlateNum,String CLSBDH,String ShelvesNum,String BusType,int Index,String Code,String Owner
 			,String IDNum,String ChineseBrand, String Color, String EngineNum, String UseOfNature, String ModelOfCar, String BusName,
 			String Verifier, String Verifytime,String WrongContent) {
 		this.PlateType = PlateType;
@@ -105,11 +105,11 @@ public class PrintableBean {
 		Index = index;
 	}
 
-	public int getCode() {
+	public String getCode() {
 		return Code;
 	}
 
-	public void setCode(int code) {
+	public void setCode(String code) {
 		Code = code;
 	}
 
@@ -203,7 +203,7 @@ public class PrintableBean {
 
 	public static List<PrintableBean> createBeanCollection() {
 		List<PrintableBean> list = new ArrayList<PrintableBean>();
-		PrintableBean bean = new PrintableBean("小型汽车","辽BB8K57","5692","001-001-001-001","新车注册",1,44567788,
+		PrintableBean bean = new PrintableBean("小型汽车","辽BB8K57","5692","001-001-001-001","新车注册",1,"44567788",
 				"陈顺谊","2102121211212","北汽","基金色","AF0492","家用","E130","新车注册","鲁智深","2018年12月29日","车辆照片不清晰。");
 		list.add(bean);
 		return list;
@@ -215,7 +215,7 @@ public class PrintableBean {
 	private String ShelvesNum;//上架编号
 	private String BusType;// 业务类型
 	private int Index;//索引号
-	private int Code;//流水号
+	private String Code;//流水号
 	private String Owner;//所有人
 	private String IDNum;//证件号码
 	private String ChineseBrand;//中文品牌
